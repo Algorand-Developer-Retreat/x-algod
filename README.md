@@ -1,13 +1,13 @@
 # x-algod
 
 **x-algod** is a community-first, extensible proxy layer for the Algorand `algod` API.  
-It allows developers to compose and expose useful API endpoints on top of the existing node interface — without altering the node itself.
+It allows developers to compose and expose useful API endpoints on top of the existing node interface — without altering the node api itself.
 
 ---
 
 ## 🌐 What is x-algod?
 
-x-algod is a thin proxy layer designed to sit in front of any Algorand `algod` node. It transparently forwards native requests while also exposing a new `/community/*` namespace. This namespace serves as a space for developers to build useful abstractions and utilities using standard `algod` calls — without modifying the node, breaking compatibility, or waiting on core protocol changes.
+x-algod is a thin proxy layer designed to sit in front of any Algorand `algod` node. It transparently forwards native requests while also exposing a new `/community/*` namespace. This namespace serves as a space for developers to build useful abstractions and utilities using standard `algod` calls — without modifying the node api, breaking compatibility, or waiting on core protocol changes.
 
 It enables:
 - Rapid prototyping of frequently needed functionalities
@@ -22,7 +22,7 @@ In essence, **x-algod gives the Algorand ecosystem an unofficial innovation laye
 
 While the Algorand stack is clean and well-layered (`algod`, SDKs, AlgoKit), there's no safe and standardized space for community-contributed features to live, grow, and evolve **between algod and the SDKs**.
 
-x-algod fills this gap.
+x-algod is intended to fill this gap.
 
 ---
 
@@ -30,7 +30,7 @@ x-algod fills this gap.
 
 - Provide a transparent proxy for `algod`
 - Introduce a `/community/*` namespace for new utilities
-- Encourage experimentation with no risk to node compatibility
+- Encourage experimentation with no risk to node api compatibility
 - Allow endpoint proposals to mature before SDK integration
 
 ---
